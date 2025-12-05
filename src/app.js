@@ -19,13 +19,12 @@ function generarCarta() {
 
 window.onload = function () {
     generarCarta();
+    intervalo = setInterval(generarCarta, 10000);
 
 
     document.getElementById('botonGenerar').addEventListener('click', function () {
         generarCarta();
         clearInterval(intervalo);
-        intervalo = setInterval(generarCarta, 10000);
-
         intervalo = setInterval(generarCarta, 10000);
     });
 }
